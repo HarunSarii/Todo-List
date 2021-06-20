@@ -1,0 +1,123 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 60vw;
+    height: 80vh;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: #00000080;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+main header {
+    font-size: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b388ff;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main header .todo-add {
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+}
+
+#todo-input {
+    flex: 7;
+    padding-left: 10px;
+    border-color: #fff;
+    outline: none;
+}
+
+#todo-button {
+    flex: 3;
+    
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    border-color: #007ac1;
+    
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.todos {
+    width: 50vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: auto;
+}
+
+.todos ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    color: #fff;
+    margin: 3px 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+ul li * {
+    background-color: #ffffff40;
+    font-weight: bold;
+}
+
+ul li:nth-child(odd) * {
+    background: #ffffff80;
+  }
+
+li i {
+    padding: 10px;
+    color: #00000030;
+}
+
+li.checked>i {
+    color: #00e676;
+}
+
+li p {
+    flex: 1;
+    font-size: 1.3rem;
+
+    padding: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+li.checked>p {
+    color: #fff;
+    text-decoration: line-through;
+    font-weight: normal;
+}
